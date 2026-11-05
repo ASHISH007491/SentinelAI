@@ -98,3 +98,8 @@ Each run writes `summary.csv` (mean ± std per metric, including tokens, LLM cal
 ## Author
 
 **Ashish Kadam**, MSc Cyber Security, University of Birmingham. Blue team / SOC: SIEM (Sentinel, Splunk, ELK), incident response, security automation.
+I'm a blue-team engineer focused on SOC operations and security automation. My background includes a Cybersecurity Analyst internship at **Maharashtra Cyber (State HQ)**, where I worked hands-on with **Microsoft Sentinel, Splunk and ELK** on detection, OSINT and incident response, and automated analyst workflows in Python and PowerShell. Before that, I worked as a backend developer (Python, SQL, REST APIs).
+
+SentinelAI brings those two sides together: it applies LLM agents to real analyst work (vulnerability prioritisation, phishing investigation and code review) while treating the AI itself as an attack surface to defend.
+
+**Open to:** SOC Analyst · Security Engineer · Detection & Response roles in the UK.
