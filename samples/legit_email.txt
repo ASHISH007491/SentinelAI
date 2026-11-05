@@ -1,0 +1,11 @@
+From: ship-confirm@amazon.com
+To: ashish@example.com
+Subject: Your order has shipped
+Authentication-Results: spf=pass dkim=pass
+
+Hi Ashish,
+
+Good news - your order #112-3456789 has shipped and is expected to arrive
+on Tuesday. You can track it any time from Your Orders.
+
+Thanks for shopping with us.

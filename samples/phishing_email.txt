@@ -1,0 +1,19 @@
+From: security@paypa1-support.com
+To: ashish@example.com
+Subject: Urgent: Your account will be suspended
+Authentication-Results: spf=fail dkim=fail
+
+Dear customer,
+
+We detected unusual activity on your account. For your protection we have
+temporarily limited access.
+
+You must verify your identity within 24 hours or your account will be
+permanently locked. Click the secure link below to restore access:
+
+http://paypa1-support.com/verify?id=8842
+
+Failure to confirm will result in suspension of all services.
+
+Regards,
+The Security Team

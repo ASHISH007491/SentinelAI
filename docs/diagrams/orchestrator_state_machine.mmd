@@ -1,0 +1,16 @@
+stateDiagram-v2
+    [*] --> Received
+    Received --> Classifying: load memory context
+    Classifying --> Planning: intent resolved
+    Classifying --> Failed: intent unresolvable
+    Planning --> Executing: plan built
+    Planning --> Failed: no capable agents
+    Executing --> Executing: next agent (checkpoint)
+    Executing --> Recovering: agent failed
+    Recovering --> Executing: recovered / skipped optional
+    Recovering --> Degraded: required agent failed
+    Executing --> Aggregating: all agents done
+    Degraded --> Aggregating: collect partial outputs
+    Aggregating --> Completed: response built
+    Completed --> [*]
+    Failed --> [*]

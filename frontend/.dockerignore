@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+dist/
+.env*.local
+*.tsbuildinfo
+# leftover Vite cruft (not used by Next)
+vite.config.ts

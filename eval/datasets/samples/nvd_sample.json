@@ -1,0 +1,47 @@
+{
+  "resultsPerPage": 3,
+  "totalResults": 3,
+  "format": "NVD_CVE",
+  "version": "2.0",
+  "vulnerabilities": [
+    {
+      "cve": {
+        "id": "CVE-2021-44228",
+        "descriptions": [
+          { "lang": "en", "value": "Apache Log4j2 JNDI features do not protect against attacker-controlled LDAP endpoints (Log4Shell)." },
+          { "lang": "es", "value": "Descripcion en espanol." }
+        ],
+        "metrics": {
+          "cvssMetricV31": [
+            { "cvssData": { "version": "3.1", "baseScore": 10.0, "baseSeverity": "CRITICAL" } }
+          ],
+          "cvssMetricV2": [
+            { "cvssData": { "version": "2.0", "baseScore": 9.3 } }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2014-0160",
+        "descriptions": [
+          { "lang": "en", "value": "The TLS heartbeat extension in OpenSSL allows remote memory disclosure (Heartbleed)." }
+        ],
+        "metrics": {
+          "cvssMetricV2": [
+            { "cvssData": { "version": "2.0", "baseScore": 5.0 } }
+          ]
+        }
+      }
+    },
+    {
+      "cve": {
+        "id": "CVE-2099-99999",
+        "descriptions": [
+          { "lang": "en", "value": "Awaiting analysis; no score assigned yet." }
+        ],
+        "metrics": {}
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+flowchart TD
+    START([start])
+    END([end])
+    START --> receive
+    receive[receive]
+    validate[validate]
+    determine_intent[determine_intent]
+    select_agents[select_agents]
+    execute_agents[execute_agents]
+    collect_results[collect_results]
+    security_advisor[security_advisor]
+    report_generator[report_generator]
+    return_response[return_response]
+    return_error[return_error]
+    receive --> validate
+    determine_intent --> select_agents
+    execute_agents --> collect_results
+    collect_results --> security_advisor
+    security_advisor --> report_generator
+    report_generator --> return_response
+    return_response --> END
+    return_error --> END
+    validate -. ok .-> determine_intent
+    validate -. invalid .-> return_error
+    select_agents -. has .-> execute_agents
+    select_agents -. none .-> return_error
+    execute_agents -. on_error .-> return_error
+    security_advisor -. on_error .-> return_error
+    report_generator -. on_error .-> return_error

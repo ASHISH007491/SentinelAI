@@ -1,0 +1,15 @@
+import { QueryClient } from "@tanstack/react-query";
+
+/** Factory so server and client never share a QueryClient instance. */
+export function makeQueryClient() {
+  return new QueryClient({
+    defaultOptions: {
+      queries: {
+        staleTime: 30_000,
+        gcTime: 5 * 60_000,
+        retry: 1,
+        refetchOnWindowFocus: false,
+      },
+    },
+  });
+}

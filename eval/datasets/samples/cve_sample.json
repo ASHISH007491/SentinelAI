@@ -1,0 +1,178 @@
+[
+  {
+    "cve_id": "CVE-2021-44228",
+    "cvss": 10.0,
+    "epss": 0.975,
+    "kev": true,
+    "exploit_available": true,
+    "description": "Log4Shell JNDI RCE in Apache Log4j2"
+  },
+  {
+    "cve_id": "CVE-2014-0160",
+    "cvss": 7.5,
+    "epss": 0.945,
+    "kev": true,
+    "exploit_available": true,
+    "description": "Heartbleed OpenSSL memory disclosure"
+  },
+  {
+    "cve_id": "CVE-2017-0144",
+    "cvss": 8.1,
+    "epss": 0.965,
+    "kev": true,
+    "exploit_available": true,
+    "description": "EternalBlue SMBv1 remote code execution"
+  },
+  {
+    "cve_id": "CVE-2019-0708",
+    "cvss": 9.8,
+    "epss": 0.962,
+    "kev": true,
+    "exploit_available": true,
+    "description": "BlueKeep RDP pre-auth RCE"
+  },
+  {
+    "cve_id": "CVE-2022-22965",
+    "cvss": 9.8,
+    "epss": 0.948,
+    "kev": true,
+    "exploit_available": true,
+    "description": "Spring4Shell data binding RCE"
+  },
+  {
+    "cve_id": "CVE-2023-23397",
+    "cvss": 9.8,
+    "epss": 0.91,
+    "kev": true,
+    "exploit_available": true,
+    "description": "Outlook NTLM relay privilege escalation"
+  },
+  {
+    "cve_id": "CVE-2018-13379",
+    "cvss": 9.8,
+    "epss": 0.94,
+    "kev": true,
+    "exploit_available": true,
+    "description": "Fortinet SSL VPN path traversal"
+  },
+  {
+    "cve_id": "CVE-2020-1472",
+    "cvss": 10.0,
+    "epss": 0.96,
+    "kev": true,
+    "exploit_available": true,
+    "description": "Zerologon Netlogon privilege escalation"
+  },
+  {
+    "cve_id": "CVE-2021-34527",
+    "cvss": 8.8,
+    "epss": 0.88,
+    "kev": true,
+    "exploit_available": true,
+    "description": "PrintNightmare spooler RCE"
+  },
+  {
+    "cve_id": "CVE-2022-1388",
+    "cvss": 9.8,
+    "epss": 0.9,
+    "kev": true,
+    "exploit_available": true,
+    "description": "F5 BIG-IP iControl REST auth bypass"
+  },
+  {
+    "cve_id": "CVE-2016-5195",
+    "cvss": 7.8,
+    "epss": 0.42,
+    "kev": false,
+    "exploit_available": true,
+    "description": "Dirty COW Linux kernel privilege escalation"
+  },
+  {
+    "cve_id": "CVE-2021-3156",
+    "cvss": 7.8,
+    "epss": 0.34,
+    "kev": false,
+    "exploit_available": true,
+    "description": "Sudo Baron Samedit heap overflow"
+  },
+  {
+    "cve_id": "CVE-2020-14882",
+    "cvss": 9.8,
+    "epss": 0.71,
+    "kev": false,
+    "exploit_available": true,
+    "description": "Oracle WebLogic console RCE"
+  },
+  {
+    "cve_id": "CVE-2019-11510",
+    "cvss": 10.0,
+    "epss": 0.83,
+    "kev": true,
+    "exploit_available": true,
+    "description": "Pulse Secure arbitrary file read"
+  },
+  {
+    "cve_id": "CVE-2023-34362",
+    "cvss": 9.8,
+    "epss": 0.86,
+    "kev": true,
+    "exploit_available": true,
+    "description": "MOVEit Transfer SQL injection"
+  },
+  {
+    "cve_id": "CVE-2022-30190",
+    "cvss": 7.8,
+    "epss": 0.55,
+    "kev": true,
+    "exploit_available": true,
+    "description": "Follina MSDT remote code execution"
+  },
+  {
+    "cve_id": "CVE-2021-26855",
+    "cvss": 9.1,
+    "epss": 0.93,
+    "kev": true,
+    "exploit_available": true,
+    "description": "ProxyLogon Exchange SSRF"
+  },
+  {
+    "cve_id": "CVE-2015-1635",
+    "cvss": 10.0,
+    "epss": 0.21,
+    "kev": false,
+    "exploit_available": false,
+    "description": "HTTP.sys remote code execution"
+  },
+  {
+    "cve_id": "CVE-2020-0601",
+    "cvss": 8.1,
+    "epss": 0.18,
+    "kev": false,
+    "exploit_available": true,
+    "description": "CurveBall Windows CryptoAPI spoofing"
+  },
+  {
+    "cve_id": "CVE-2024-3094",
+    "cvss": 10.0,
+    "epss": 0.12,
+    "kev": false,
+    "exploit_available": false,
+    "description": "XZ Utils backdoor in liblzma"
+  },
+  {
+    "cve_id": "CVE-2013-2028",
+    "cvss": 9.8,
+    "epss": 0.07,
+    "kev": false,
+    "exploit_available": false,
+    "description": "nginx chunked transfer stack overflow"
+  },
+  {
+    "cve_id": "CVE-2017-5638",
+    "cvss": 10.0,
+    "epss": 0.97,
+    "kev": true,
+    "exploit_available": true,
+    "description": "Apache Struts2 OGNL RCE (Equifax)"
+  }
+]

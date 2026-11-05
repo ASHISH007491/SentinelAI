@@ -1,0 +1,14 @@
+{"id": "code-001", "language": "python", "code": "q = \"SELECT * FROM users WHERE id = \" + request.args[\"id\"]\ncur.execute(q)", "vulnerable": true, "cwe": "CWE-89", "source": "synthetic"}
+{"id": "code-002", "language": "python", "code": "cur.execute(\"SELECT * FROM users WHERE id = %s\", (request.args[\"id\"],))", "vulnerable": false, "cwe": null, "source": "synthetic"}
+{"id": "code-003", "language": "python", "code": "os.system(\"ping -c1 \" + user_host)", "vulnerable": true, "cwe": "CWE-78", "source": "synthetic"}
+{"id": "code-004", "language": "python", "code": "subprocess.run([\"ping\",\"-c1\",user_host], check=True)", "vulnerable": false, "cwe": null, "source": "synthetic"}
+{"id": "code-005", "language": "python", "code": "tmpl = \"<h1>Hello \" + name + \"</h1>\"\nreturn HttpResponse(tmpl)", "vulnerable": true, "cwe": "CWE-79", "source": "synthetic"}
+{"id": "code-006", "language": "python", "code": "return render(request, \"hello.html\", {\"name\": name})  # autoescaped", "vulnerable": false, "cwe": null, "source": "synthetic"}
+{"id": "code-007", "language": "python", "code": "data = pickle.loads(request.body)", "vulnerable": true, "cwe": "CWE-502", "source": "synthetic"}
+{"id": "code-008", "language": "python", "code": "data = json.loads(request.body)", "vulnerable": false, "cwe": null, "source": "synthetic"}
+{"id": "code-009", "language": "python", "code": "path = os.path.join(BASE, request.args[\"f\"])\nopen(path).read()", "vulnerable": true, "cwe": "CWE-22", "source": "synthetic"}
+{"id": "code-010", "language": "python", "code": "name = os.path.basename(request.args[\"f\"])\nopen(os.path.join(BASE,name)).read()", "vulnerable": false, "cwe": null, "source": "synthetic"}
+{"id": "code-011", "language": "python", "code": "hashlib.md5(password.encode()).hexdigest()", "vulnerable": true, "cwe": "CWE-327", "source": "synthetic"}
+{"id": "code-012", "language": "python", "code": "bcrypt.hashpw(password.encode(), bcrypt.gensalt())", "vulnerable": false, "cwe": null, "source": "synthetic"}
+{"id": "code-013", "language": "java", "code": "String q = \"SELECT * FROM u WHERE n='\"+name+\"'\";\nst.execute(q);", "vulnerable": true, "cwe": "CWE-89", "source": "synthetic"}
+{"id": "code-014", "language": "java", "code": "PreparedStatement ps = c.prepareStatement(\"SELECT * FROM u WHERE n=?\");\nps.setString(1,name);", "vulnerable": false, "cwe": null, "source": "synthetic"}

@@ -1,0 +1,20 @@
+flowchart TD
+    START([start])
+    END([end])
+    START --> ingest
+    ingest[ingest]
+    classify[classify]
+    vuln[vuln]
+    phishing[phishing]
+    advisor[advisor]
+    report[report]
+    recover[recover]
+    ingest --> classify
+    vuln --> advisor
+    phishing --> advisor
+    advisor --> report
+    report --> END
+    recover --> advisor
+    classify -. vuln .-> vuln
+    classify -. phishing .-> phishing
+    vuln -. on_error .-> recover

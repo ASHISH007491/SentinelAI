@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+
+# Eval artefacts
+eval/results/*
+!eval/results/.gitkeep
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+# MS Office lock files
+~$*
+
+# Runtime upload storage
+var/
+
+# SQLite databases (test/smoke artefacts; never commit)
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+
+# ingested full corpora (large / licensed) — keep the dir, ignore data
+eval/datasets/full/*
+!eval/datasets/full/.gitkeep

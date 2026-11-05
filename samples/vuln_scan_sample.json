@@ -1,0 +1,8 @@
+[
+  {"cve_id": "CVE-2021-44228", "cvss": 10.0, "epss": 0.975, "kev": true,  "exploit_available": true,  "description": "Log4Shell JNDI RCE in Apache Log4j2"},
+  {"cve_id": "CVE-2023-34362", "cvss": 9.8,  "epss": 0.86,  "kev": true,  "exploit_available": true,  "description": "MOVEit Transfer SQL injection"},
+  {"cve_id": "CVE-2020-1472",  "cvss": 10.0, "epss": 0.96,  "kev": true,  "exploit_available": true,  "description": "Zerologon Netlogon privilege escalation"},
+  {"cve_id": "CVE-2015-1635",  "cvss": 10.0, "epss": 0.21,  "kev": false, "exploit_available": false, "description": "HTTP.sys remote code execution (high CVSS, low real-world exploitation)"},
+  {"cve_id": "CVE-2024-3094",  "cvss": 10.0, "epss": 0.12,  "kev": false, "exploit_available": false, "description": "XZ Utils backdoor in liblzma"},
+  {"cve_id": "CVE-2016-5195",  "cvss": 7.8,  "epss": 0.42,  "kev": false, "exploit_available": true,  "description": "Dirty COW Linux kernel privilege escalation"}
+]

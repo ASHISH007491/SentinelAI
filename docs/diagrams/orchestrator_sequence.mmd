@@ -1,0 +1,29 @@
+sequenceDiagram
+    actor User
+    participant API as /api/v1 (FastAPI)
+    participant Orch as Orchestrator
+    participant Mem as Memory Service
+    participant LLM as LLM Service
+    participant Reg as Agent Registry
+    participant Eng as Workflow Engine
+    participant Ag as Specialised Agent (n)
+
+    User->>API: submit request (text + artefacts)
+    API->>Orch: run(request)
+    Orch->>Mem: recall(session context)
+    Orch->>LLM: classify intent (orchestrator prompt)
+    LLM-->>Orch: Intent{workflow, params}
+    Orch->>Reg: find_by_capability + resolution_order
+    Reg-->>Orch: ExecutionPlan (ordered agent ids)
+    Orch->>Eng: build graph(plan) + run(state)
+    loop each agent node
+        Eng->>Reg: create(agent_id)
+        Eng->>Ag: run(state slice)
+        Ag-->>Eng: AgentResult (merged into state)
+        Eng->>Mem: checkpoint state
+    end
+    Eng-->>Orch: WorkflowRunResult + trace
+    Orch->>Orch: aggregate outputs
+    Orch->>Mem: store execution history
+    Orch-->>API: OrchestratorResult (JSON)
+    API-->>User: final response (+ partial if degraded)

@@ -1,0 +1,15 @@
+flowchart TD
+    Orchestrator --> IntentClassifier
+    Orchestrator --> Planner
+    Orchestrator --> ExecutionEngine
+    Orchestrator --> Aggregator
+    IntentClassifier --> LLMService
+    IntentClassifier --> PromptManager
+    Planner --> AgentRegistry
+    ExecutionEngine --> WorkflowEngine
+    ExecutionEngine --> AgentRegistry
+    ExecutionEngine --> ToolManager
+    ExecutionEngine --> WorkflowState
+    Aggregator --> WorkflowState
+    Orchestrator --> MemoryService
+    WorkflowEngine --> WorkflowState
